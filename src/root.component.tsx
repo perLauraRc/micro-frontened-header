@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import { GRID_BACKGROUND_DEFAULT_COLOR } from "./constants/defaults";
+import {
+  GRID_BACKGROUND_DEFAULT_COLOR,
+  SECTION_DEFAULT_COLOR,
+} from "./constants/defaults";
 import { License } from "./constants/license";
 import { resolveGridBuild } from "./helpers/layout-helper";
 
@@ -16,6 +19,7 @@ const SectionWithGrid = styled.section`
     agileEstimation
       ? resolveGridBuild(agileEstimation)
       : GRID_BACKGROUND_DEFAULT_COLOR};
+  border-bottom: ${() => `1px solid ${SECTION_DEFAULT_COLOR}`};
 `;
 
 export default function Root(props) {

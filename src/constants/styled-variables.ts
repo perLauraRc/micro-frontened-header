@@ -1,11 +1,3 @@
-export const spaces = {
-  xs: "5px",
-  sm: "10px",
-  md: "20px",
-  lg: "24px",
-  xl: "48px",
-};
-
 export const colors = {
   white: "#FFFFFF",
   black: "#000000",

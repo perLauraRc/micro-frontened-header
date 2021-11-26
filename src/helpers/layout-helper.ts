@@ -1,7 +1,11 @@
+import { GRID_BACKGROUND_DEFAULT_COLOR } from "../constants/defaults";
 import { License } from "../constants/license";
-import { colors } from "../constants/styled-variables";
+import { mapEstimationTypeToGridBuild } from "./mapping-helper";
 
-export const resolveGridBuild = (agileEstimation: License) => {
+export const resolveGridBuild = (agileEstimation: License): string => {
   console.log(agileEstimation);
-  return colors.green;
+  return (
+    mapEstimationTypeToGridBuild.get(agileEstimation) ||
+    GRID_BACKGROUND_DEFAULT_COLOR
+  );
 };
