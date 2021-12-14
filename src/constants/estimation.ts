@@ -1,4 +1,4 @@
-export enum License {
+export enum Estimation {
   StoryPoints = "story-points",
   StoryHours = "hours",
 }

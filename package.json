@@ -1,8 +1,20 @@
 {
   "name": "@aizon-bigfinite/micro-header",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "scripts": {
     "start": "webpack serve --port 9002",
-    "start:standalone": "webpack serve --env standalone",
+    "start:standalone": "webpack serve --port 9002 --env standalone",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
@@ -30,6 +42,7 @@
     "babel-plugin-styled-components": "^2.0.1",
     "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-ts-react-important-stuff": "^3.0.0",
@@ -40,6 +53,9 @@
     "jest-cli": "^27.0.6",
     "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
     "ts-config-single-spa": "^3.0.0",
     "typescript": "^4.3.5",
     "webpack": "^5.51.1",
@@ -56,6 +72,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "single-spa": "^5.9.3",
